@@ -30,12 +30,12 @@ print(t1)
 
 
 #numpy中的clip(裁剪)
-t2=t.clip(10,18)
+t2=t.clip(10,18) #小于10的数值设置为10 大于18的数值设置为18
 print(t2)
 
 #将数值替换为nan
 t3=np.array([[12,3,4],[7,9,6]])
 t3=t3.astype(float)
 print(t3)
-t3[0,0]=np.nan
+t3[0,0]=np.nan  #第一行和第一列数值设置为零
 print(t3)
